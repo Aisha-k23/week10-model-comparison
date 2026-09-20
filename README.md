@@ -78,7 +78,28 @@ This project helped me understand that machine learning involves more than simpl
 
 I also learned how to communicate model performance and recognise limitations in a dataset.
 
-## Files
+## Code summery 
+## Code Summary
 
-- `week10_model_comparison.ipynb` - Jupyter Notebook containing the complete project
-- `README.md` - Project overview and results
+The code in this project follows a simple machine learning workflow:
+
+1. **Create the dataset** – Pandas is used to create a small dataset containing hours studied and exam scores.
+
+2. **Prepare the data** – The `Hours_Studied` column is used as the input feature (`X`), while `Exam_Score` is the target (`y`) that the models try to predict.
+
+3. **Split the data** – The dataset is divided into training data and testing data. The models learn from the training data and are evaluated using the unseen testing data.
+
+4. **Train Linear Regression** – A Linear Regression model is created and trained to learn the relationship between hours studied and exam scores.
+
+5. **Train Decision Tree Regression** – A Decision Tree model is created and trained using the same training data.
+
+6. **Make predictions** – Both models predict exam scores for the testing data.
+
+7. **Evaluate the models** – Mean Absolute Error (MAE) and R² are calculated to measure how well each model performed.
+
+8. **Compare the models** – The results from both models are placed into a comparison table so their performance can be easily reviewed.
+
+9. **Visualise the results** – Charts are used to compare model errors and show the actual exam scores against the model predictions.
+
+Overall, the code demonstrates the basic machine learning workflow of **preparing data → training models → making predictions → evaluating models → comparing results**.
+
